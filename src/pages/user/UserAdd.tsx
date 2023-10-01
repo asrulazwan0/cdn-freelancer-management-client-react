@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { AxiosError } from 'axios';
 import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
@@ -11,7 +10,6 @@ import Divider from "@mui/material/Divider";
 import HomeIcon from "@mui/icons-material/Home";
 import IconButton from '@mui/material/IconButton';
 import Link from "@mui/material/Link";
-import Snackbar from "@mui/material/Snackbar";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { createUser } from "../../services/UserService";
