@@ -1,7 +1,7 @@
 import { ApiClient } from "../api/ApiClient";
 import { User } from "../models/User";
 
-export const getUser = async (id: number): Promise<User> => {
+export const getUser = async (id: string): Promise<User> => {
   const response = await ApiClient.get(`/users/${id}`);
   return response.data;
 };
