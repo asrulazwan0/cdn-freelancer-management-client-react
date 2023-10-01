@@ -5,6 +5,7 @@ import Container from "@mui/material/Container";
 import TopBar from "./components/TopBar";
 import UserList from "./pages/user/UserList";
 import UserAdd from "./pages/user/UserAdd";
+import UserEdit from "./pages/user/UserEdit";
 import NoMatch from "./components/NoMatch";
 
 let router = createBrowserRouter([
@@ -16,6 +17,10 @@ let router = createBrowserRouter([
   {
     path: "/users/add",
     element: <UserAdd />,
+  },
+  {
+    path: "/users/:userId",
+    element: <UserEdit />,
   },
 ]);
 
