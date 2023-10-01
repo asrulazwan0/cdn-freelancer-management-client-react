@@ -16,7 +16,7 @@ export const createUser = async (user: User): Promise<User> => {
   return response.data;
 };
 
-export const updateUser = async (id: number, user: User): Promise<User> => {
-  const response = await ApiClient.put(`users/${id}`, user);
+export const updateUser = async (user: User): Promise<User> => {
+  const response = await ApiClient.put(`users/${user.id}`, user);
   return response.data;
 };
