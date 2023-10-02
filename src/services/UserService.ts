@@ -20,3 +20,8 @@ export const updateUser = async (user: User): Promise<User> => {
   const response = await ApiClient.put(`users/${user.id}`, user);
   return response.data;
 };
+
+export const deleteUser = async (id: string): Promise<User> => {
+  const response = await ApiClient.delete(`users/${id}`);
+  return response.data;
+};
