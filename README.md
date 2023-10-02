@@ -1,31 +1,10 @@
-# Material UI - Create React App example with styled-components in TypeScript
+## Description
 
-The main difference between this and the non-TypeScript example is that you need to add the following path config to your `tsconfig.json`:
-
-```json
-"paths": {
-  "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
-}
-```
-
-and install @types/styled-components:
-
-```bash
-npm install --save-dev @types/styled-components
-```
-
-Alternatively, to skip this configuration, you can set `skipLibCheck: true` in your tsconfig.
+This is a frontend application built using [Material UI - Create React App](https://github.com/mui/material-ui/tree/master/examples/material-ui-cra-styled-components-ts). It serves as the user interface for our freelance management system.
 
 ## How to use
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
-
-<!-- #default-branch-switch -->
-
-```bash
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/material-ui-cra-styled-components-ts
-cd material-ui-cra-styled-components-ts
-```
+Download the example [or clone the repo](https://github.com/asrulazwan0/cdn-freelancer-management-client-react):
 
 Install it and run:
 
@@ -34,23 +13,24 @@ npm install
 npm start
 ```
 
-## CodeSandbox
+## Configure API URL
 
-<!-- #default-branch-switch -->
+Before running the application, make sure to configure the API URL in the environment files located in the environments folder.
 
-Note that CodeSandbox is not supporting react-app-rewired, yet you can [still see the code](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/material-ui-cra-styled-components-ts).
+```bash
+- For development, edit environments.dev.ts
+- For production, edit environments.prod.ts
+```
 
-The following link leverages this demo: https://mui.com/guides/interoperability/#change-the-default-styled-engine with Parcel's alias feature within the `package.json`.
+## Server-side
+The server-side of this application can be found in a separate repository: https://github.com/asrulazwan0/cdn-freelancer-management-api-dotnet
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-interoperability-w9z9d)
+## Stay in touch
 
-## The idea behind the example
+- Author - [Asrul Azwan](https://www.linkedin.com/in/asrul-azwan)
+- Website - [https://asrulazwan.com](https://asrulazwan.com)
+- Twitter - [@asrlazwn](https://twitter.com/asrlazwn)
 
-This example demonstrates how to set up Material UI with [Create React App](https://github.com/facebookincubator/create-react-app) with [styled-components](https://styled-components.com/) as a style engine for your application using TypeScript.
+## License
 
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+This project is licensed under the MIT License.
