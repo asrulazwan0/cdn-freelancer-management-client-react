@@ -15,11 +15,17 @@ npm start
 
 ## Configure API URL
 
-Before running the application, make sure to configure the API URL in the environment files located in the environments folder.
+Before running the application, make sure to configure the API URL in the .env file. If the .env file does not exist, create one by copying the .env.example file.
 
 ```bash
-- For development, edit environments.dev.ts
-- For production, edit environments.prod.ts
+cp .env.example .env
+```
+
+Then, open the .env file and set the REACT_APP_API_URL variable to your API URL.
+
+
+```bash
+REACT_APP_API_URL=http://your-api-url.com
 ```
 
 ## Server-side
